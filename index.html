@@ -1,53 +1,831 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="SK Solar Energy provides solar consultation, rooftop solar installation, EPC solutions, system design and maintenance across Bihar and Rajasthan.">
-<meta name="theme-color" content="#082b62">
-<title>SK Solar Energy | Powering Tomorrow with Clean Energy</title>
-<style>
-:root{--navy:#082b62;--blue:#0756a5;--orange:#ff9418;--green:#238b36;--ink:#15243a;--muted:#5e6d80;--pale:#f2f7fc}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
-header{background:#fff;position:sticky;top:0;z-index:10;box-shadow:0 2px 14px #0b2b5012}.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:900;color:var(--navy);font-size:21px;letter-spacing:.3px}.mark{width:46px;height:46px;border-radius:13px;background:linear-gradient(140deg,var(--navy) 0 55%,var(--orange) 55%);display:grid;place-items:center;color:white;font-size:22px;font-weight:900}.brand small{display:block;color:var(--green);font-size:11px;letter-spacing:3px;margin-top:-5px}.links{display:flex;gap:25px;font-size:14px;font-weight:700;color:#34445b}.links a:hover{color:var(--green)}.btn{display:inline-block;background:var(--orange);color:#102b50;padding:12px 20px;border-radius:8px;font-weight:800}.hero{background:linear-gradient(115deg,#eaf4ff,#fff 55%,#fff4e5);padding:76px 0 70px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}.eyebrow{color:var(--green);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:13px}.hero h1{font-size:clamp(38px,5vw,62px);line-height:1.08;color:var(--navy);margin:12px 0}.hero h1 span{color:var(--green)}.hero p{font-size:18px;color:var(--muted);max-width:620px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:26px}.btn.secondary{background:var(--navy);color:white}.solar-art{min-height:300px;border-radius:28px;background:linear-gradient(145deg,#cce6ff,#f8fbff 55%,#ffedcf);display:grid;place-items:center;position:relative;box-shadow:0 18px 45px #123a641c}.sun{position:absolute;top:30px;right:50px;width:90px;height:90px;border-radius:50%;background:radial-gradient(circle,#fff5a6,var(--orange));box-shadow:0 0 0 15px #ffb52a22,0 0 55px #ffad3290}.panel{width:76%;height:125px;transform:skewY(-12deg) rotate(-2deg);background:repeating-linear-gradient(90deg,transparent 0 24px,#d9ecff 25px 27px),repeating-linear-gradient(0deg,#0b3977 0 27px,#9dc9f3 28px 30px);border:7px solid #f8fbff;box-shadow:0 18px 20px #102f562b;z-index:1}.art-caption{position:absolute;bottom:24px;left:20px;right:20px;text-align:center;color:var(--navy);font-weight:800}.stats{background:var(--navy);color:white;padding:19px 0}.stats-grid{display:grid;grid-template-columns:repeat(3,1fr);text-align:center;gap:12px}.stats strong{display:block;font-size:19px}.stats span{font-size:13px;color:#d6e7fb}
-section{padding:70px 0}.section-head{text-align:center;max-width:720px;margin:0 auto 36px}.section-head h2{font-size:34px;color:var(--navy);margin:7px 0}.section-head p{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:25px;border:1px solid #e3ebf4;border-radius:15px;background:white;box-shadow:0 8px 25px #153c6410}.icon{width:48px;height:48px;border-radius:12px;background:#eaf4ff;display:grid;place-items:center;font-size:25px}.card h3{color:var(--navy);margin:14px 0 6px}.card p{color:var(--muted);font-size:14px;margin:0}.about{background:var(--pale)}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}.about h2{font-size:34px;line-height:1.2;color:var(--navy)}.checklist{padding:0;list-style:none}.checklist li{margin:11px 0}.checklist li:before{content:"✓";color:var(--green);font-weight:900;margin-right:10px}.note{background:#fff;border-left:4px solid var(--orange);padding:18px;border-radius:8px;color:var(--muted);font-size:14px}.areas{display:flex;gap:12px;flex-wrap:wrap;justify-content:center}.pill{background:#eaf4ff;color:var(--navy);border-radius:30px;padding:10px 17px;font-weight:700}.contact{background:linear-gradient(120deg,var(--navy),#0b4a83);color:white}.contact .section-head h2,.contact .section-head p{color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}.contact-box{background:white;color:var(--ink);border-radius:16px;padding:28px}.contact-box h3{color:var(--navy);margin-top:0}.contact-row{margin:14px 0}.contact-row b{display:block;color:var(--navy)}.contact .btn{margin-top:12px}footer{background:#061d43;color:#d4e3f5;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
-@media(max-width:800px){.links{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.solar-art{min-height:240px}.cards{grid-template-columns:1fr 1fr}.hero{padding:52px 0}.stats-grid{grid-template-columns:1fr}.stats-grid>div{padding:7px}}
-@media(max-width:520px){.cards{grid-template-columns:1fr}.section-head h2,.about h2{font-size:28px}.hero p{font-size:16px}.nav{height:68px}.brand{font-size:18px}}
-</style>
-</head>
-<body>
-<header><div class="wrap nav">
-<a class="brand" href="#home"><span class="mark">SK</span><span>SK SOLAR<small>ENERGY</small></span></a>
-<nav class="links"><a href="#services">Services</a><a href="company-profile.html">Company Profile</a><a href="#about">About</a><a href="#areas">Service Areas</a><a href="#contact">Contact</a></nav>
-<a class="btn" href="tel:+917909089495">Call Now</a>
-</div></header>
-<main id="home">
-<section class="hero"><div class="wrap hero-grid">
-<div><div class="eyebrow">Solar • Sustainable • Smart</div><h1>Powering Tomorrow<br>with <span>Clean Energy.</span></h1>
-<p>Practical solar energy solutions for homes, businesses and industries. Talk to SK Solar Energy for system consultation, design, installation support and maintenance.</p>
-<div class="hero-actions"><a class="btn" href="https://wa.me/917909089495?text=Hello%20SK%20Solar%20Energy%2C%20I%20need%20information%20about%20solar%20solutions.">WhatsApp Us</a><a class="btn secondary" href="#services">Explore Services</a></div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="SK Solar Energy provides solar consultation, rooftop solar installation, EPC solutions, system design and maintenance across Bihar and Rajasthan."><meta name="theme-color" content="#082b62"><title>SK Solar Energy | Powering Tomorrow with Clean Energy</title><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "SK SOLAR ENERGY",
+  "alternateName": "SK Solar Energy",
+  "url": "https://sani79090.github.io/Sk-solar-energy/"
+}
+</script><style>
+:root {
+  --navy: #082b62;
+  --blue: #0756a5;
+  --orange: #ff9418;
+  --green: #238b36;
+  --ink: #15243a;
+  --muted: #5e6d80;
+  --pale: #f2f7fc;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wrap {
+  width: min(1120px, 92%);
+  margin: auto;
+}
+
+/* HEADER */
+
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 14px #0b2b5012;
+}
+
+.nav {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 900;
+  color: var(--navy);
+  font-size: 21px;
+  letter-spacing: .3px;
+}
+
+.mark {
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: linear-gradient(140deg, var(--navy) 0 55%, var(--orange) 55%);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.brand small {
+  display: block;
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-top: -5px;
+}
+
+.links {
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #34445b;
+}
+
+.links a:hover {
+  color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--orange);
+  color: #102b50;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+/* HAMBURGER BUTTON */
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 0;
+  border-radius: 8px;
+  background: var(--navy);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 23px;
+  height: 2px;
+  background: white;
+  border-radius: 3px;
+  transition: transform .3s ease, opacity .3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(115deg, #eaf4ff, #fff 55%, #fff4e5);
+  padding: 76px 0 70px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.12fr .88fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.eyebrow {
+  color: var(--green);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.hero h1 {
+  font-size: clamp(38px, 5vw, 62px);
+  line-height: 1.08;
+  color: var(--navy);
+  margin: 12px 0;
+}
+
+.hero h1 span {
+  color: var(--green);
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 620px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-top: 26px;
+}
+
+.btn.secondary {
+  background: var(--navy);
+  color: white;
+}
+
+/* SOLAR ART */
+
+.solar-art {
+  min-height: 300px;
+  border-radius: 28px;
+  background: linear-gradient(145deg, #cce6ff, #f8fbff 55%, #ffedcf);
+  display: grid;
+  place-items: center;
+  position: relative;
+  box-shadow: 0 18px 45px #123a641c;
+}
+
+.sun {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #fff5a6, var(--orange));
+  box-shadow: 0 0 0 15px #ffb52a22, 0 0 55px #ffad3290;
+}
+
+.panel {
+  width: 76%;
+  height: 125px;
+  transform: skewY(-12deg) rotate(-2deg);
+  background:
+    repeating-linear-gradient(90deg, transparent 0 24px, #d9ecff 25px 27px),
+    repeating-linear-gradient(0deg, #0b3977 0 27px, #9dc9f3 28px 30px);
+  border: 7px solid #f8fbff;
+  box-shadow: 0 18px 20px #102f562b;
+  z-index: 1;
+}
+
+.art-caption {
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  color: var(--navy);
+  font-weight: 800;
+}
+
+/* STATS */
+
+.stats {
+  background: var(--navy);
+  color: white;
+  padding: 19px 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  gap: 12px;
+}
+
+.stats strong {
+  display: block;
+  font-size: 19px;
+}
+
+.stats span {
+  font-size: 13px;
+  color: #d6e7fb;
+}
+
+/* SECTIONS */
+
+section {
+  padding: 70px 0;
+}
+
+.section-head {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 36px;
+}
+
+.section-head h2 {
+  font-size: 34px;
+  color: var(--navy);
+  margin: 7px 0;
+}
+
+.section-head p {
+  color: var(--muted);
+}
+
+/* SERVICES */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.card {
+  padding: 25px;
+  border: 1px solid #e3ebf4;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 8px 25px #153c6410;
+}
+
+.icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eaf4ff;
+  display: grid;
+  place-items: center;
+  font-size: 25px;
+}
+
+.card h3 {
+  color: var(--navy);
+  margin: 14px 0 6px;
+}
+
+.card p {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* ABOUT */
+
+.about {
+  background: var(--pale);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 42px;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 34px;
+  line-height: 1.2;
+  color: var(--navy);
+}
+
+.checklist {
+  padding: 0;
+  list-style: none;
+}
+
+.checklist li {
+  margin: 11px 0;
+}
+
+.checklist li:before {
+  content: "✓";
+  color: var(--green);
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.note {
+  background: #fff;
+  border-left: 4px solid var(--orange);
+  padding: 18px;
+  border-radius: 8px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* SERVICE AREAS */
+
+.areas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pill {
+  background: #eaf4ff;
+  color: var(--navy);
+  border-radius: 30px;
+  padding: 10px 17px;
+  font-weight: 700;
+}
+
+/* CONTACT */
+
+.contact {
+  background: linear-gradient(120deg, var(--navy), #0b4a83);
+  color: white;
+}
+
+.contact .section-head h2,
+.contact .section-head p {
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-box {
+  background: white;
+  color: var(--ink);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.contact-box h3 {
+  color: var(--navy);
+  margin-top: 0;
+}
+
+.contact-row {
+  margin: 14px 0;
+}
+
+.contact-row b {
+  display: block;
+  color: var(--navy);
+}
+
+.contact .btn {
+  margin-top: 12px;
+}
+
+/* FOOTER */
+
+footer {
+  background: #061d43;
+  color: #d4e3f5;
+  padding: 24px 0;
+  font-size: 13px;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width: 800px) {
+
+  .links,
+  .desktop-call {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 4%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+      max-height .35s ease,
+      opacity .25s ease,
+      padding .35s ease,
+      visibility .35s;
+    box-shadow: 0 8px 15px #0b2b5012;
+  }
+
+  .mobile-menu.open {
+    max-height: 350px;
+    padding: 10px 4% 20px;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mobile-menu a {
+    padding: 11px 8px;
+    color: var(--navy);
+    font-weight: 700;
+    border-bottom: 1px solid #e8edf3;
+  }
+
+  .mobile-menu a:hover {
+    color: var(--green);
+  }
+
+  .hero-grid,
+  .about-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .solar-art {
+    min-height: 240px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero {
+    padding: 52px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid > div {
+    padding: 7px;
+  }
+}
+
+@media(max-width: 520px) {
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section-head h2,
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .nav {
+    min-height: 68px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+}
+
+/* ACCESSIBILITY */
+
+.menu-toggle:focus-visible,
+a:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 4px;
+}
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
+</style></head><body><header>
+<div class="wrap nav"><a class="brand" href="#home">
+  <span class="mark">SK</span>
+  <span>SK SOLAR<small>ENERGY</small></span>
+</a><nav class="links" aria-label="Main navigation">
+  <a href="#services">Services</a>
+  <a href="company-profile.html">Company Profile</a>
+  <a href="#about">About</a>
+  <a href="#areas">Service Areas</a>
+  <a href="#contact">Contact</a>
+</nav><a class="btn desktop-call" href="tel:+917909089495">Call Now</a>
+
+<button
+class="menu-toggle"
+id="menuToggle"
+type="button"
+aria-label="Open navigation menu"
+aria-expanded="false"
+aria-controls="mobileMenu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+</div><nav class="mobile-menu" id="mobileMenu"
+     aria-label="Mobile navigation" inert>
+  <a href="#services">Services</a>
+  <a href="company-profile.html">Company Profile</a>
+  <a href="#about">About</a>
+  <a href="#areas">Service Areas</a>
+  <a href="#contact">Contact</a>
+  <a href="tel:+917909089495">Call Now</a>
+</nav>
+</header><main id="home"><section class="hero">
+<div class="wrap hero-grid"><div>
+  <div class="eyebrow">Solar • Sustainable • Smart</div>  <h1>
+    Powering Tomorrow<br>
+    with <span>Clean Energy.</span>
+  </h1>  <p>
+    Practical solar energy solutions for homes, businesses and industries.
+    Talk to SK Solar Energy for system consultation, design,
+    installation support and maintenance.
+  </p>  <div class="hero-actions">
+    <a class="btn"
+       href="https://wa.me/917909089495?text=Hello%20SK%20Solar%20Energy%2C%20I%20need%20information%20about%20solar%20solutions.">
+       WhatsApp Us
+    </a><a class="btn secondary" href="#services">
+   Explore Services
+</a>
+
+  </div>
+</div><div class="solar-art" aria-label="Illustration of solar panels and sun">
+  <div class="sun"></div>
+  <div class="panel"></div>
+  <div class="art-caption">Clean Energy • Better Future</div>
+</div></div>
+</section><div class="stats">
+<div class="wrap stats-grid"><div>
+  <strong>Residential</strong>
+  <span>Rooftop solar solutions</span>
+</div><div>
+  <strong>Commercial & Industrial</strong>
+  <span>Business energy solutions</span>
+</div><div>
+  <strong>Bihar & Rajasthan</strong>
+  <span>Service enquiries welcome</span>
+</div></div>
+</div><section id="services">
+<div class="wrap"><div class="section-head">
+  <div class="eyebrow">What We Do</div>
+  <h2>Solar Solutions for Every Need</h2>
+  <p>
+    From initial planning to ongoing support, explore the services
+    offered by SK Solar Energy.
+  </p>
+</div><div class="cards"><div class="card">
+  <div class="icon">🏠</div>
+  <h3>Residential Solar</h3>
+  <p>Rooftop solar consultation and installation support for homes.</p>
+</div><div class="card">
+  <div class="icon">🏢</div>
+  <h3>Commercial Solar</h3>
+  <p>Solar solutions planned around shops, offices and commercial buildings.</p>
+</div><div class="card">
+  <div class="icon">🏭</div>
+  <h3>Industrial Solar</h3>
+  <p>Energy assessments and solar project planning for industrial sites.</p>
+</div><div class="card">
+  <div class="icon">⚡</div>
+  <h3>Solar EPC Solutions</h3>
+  <p>Engineering, procurement and construction coordination for solar projects.</p>
+</div><div class="card">
+  <div class="icon">📐</div>
+  <h3>System Design & Consultancy</h3>
+  <p>Guidance on system sizing, layout, components and project requirements.</p>
+</div><div class="card">
+  <div class="icon">🛠️</div>
+  <h3>Installation & Maintenance</h3>
+  <p>Installation support, inspection, troubleshooting and maintenance enquiries.</p>
+</div></div>
 </div>
-<div class="solar-art" aria-label="Illustration of solar panels and sun"><div class="sun"></div><div class="panel"></div><div class="art-caption">Clean Energy • Better Future</div></div>
-</div></section>
-<div class="stats"><div class="wrap stats-grid"><div><strong>Residential</strong><span>Rooftop solar solutions</span></div><div><strong>Commercial & Industrial</strong><span>Business energy solutions</span></div><div><strong>Bihar & Rajasthan</strong><span>Service enquiries welcome</span></div></div></div>
-<section id="services"><div class="wrap"><div class="section-head"><div class="eyebrow">What We Do</div><h2>Solar Solutions for Every Need</h2><p>From initial planning to ongoing support, explore the services offered by SK Solar Energy.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">🏠</div><h3>Residential Solar</h3><p>Rooftop solar consultation and installation support for homes.</p></div>
-<div class="card"><div class="icon">🏢</div><h3>Commercial Solar</h3><p>Solar solutions planned around shops, offices and commercial buildings.</p></div>
-<div class="card"><div class="icon">🏭</div><h3>Industrial Solar</h3><p>Energy assessments and solar project planning for industrial sites.</p></div>
-<div class="card"><div class="icon">⚡</div><h3>Solar EPC Solutions</h3><p>Engineering, procurement and construction coordination for solar projects.</p></div>
-<div class="card"><div class="icon">📐</div><h3>System Design & Consultancy</h3><p>Guidance on system sizing, layout, components and project requirements.</p></div>
-<div class="card"><div class="icon">🛠️</div><h3>Installation & Maintenance</h3><p>Installation support, inspection, troubleshooting and maintenance enquiries.</p></div>
-</div></div></section>
-<section class="about" id="about"><div class="wrap about-grid">
-<div><div class="eyebrow">About SK Solar Energy</div><h2>Building a cleaner, solar-powered future.</h2><p>SK Solar Energy is a solar energy business focused on helping customers understand and adopt clean power solutions. We aim to provide clear guidance, suitable system options and dependable customer support.</p><ul class="checklist"><li>Solutions for homes, businesses and industries</li><li>On-grid, off-grid and hybrid system guidance</li><li>Project consultation and system design</li><li>Service enquiries across Bihar and Rajasthan</li></ul></div>
-<div class="note"><b>Our approach</b><br>We first understand your electricity use, site conditions and budget, then help identify a suitable solar solution. Final system specifications, pricing, approvals and timelines are confirmed after a site assessment.</div>
-</div></section>
-<section id="areas"><div class="wrap"><div class="section-head"><div class="eyebrow">Where We Serve</div><h2>Bihar & Rajasthan</h2><p>Contact us to confirm service availability for your town, site and project requirements.</p></div><div class="areas"><span class="pill">West Champaran</span><span class="pill">Bettiah</span><span class="pill">Bihar</span><span class="pill">Udaipur</span><span class="pill">Rajasthan</span></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow" style="color:#9fe5a9">Get in Touch</div><h2>Let's discuss your solar project.</h2><p>Call or WhatsApp to enquire about a solar solution.</p></div>
-<div class="contact-grid"><div><h2>SK SOLAR ENERGY</h2><p>Powering Tomorrow with Clean Energy.</p><p>Residential • Commercial • Industrial • Solar EPC</p></div>
-<div class="contact-box"><h3>Contact Details</h3><div class="contact-row"><b>Contact Person</b>Sanideval Kumar</div><div class="contact-row"><b>Mobile</b><a href="tel:+917909089495">+91 79090 89495</a></div><div class="contact-row"><b>Address</b>West Champaran, Bettiah – 845306, Bihar</div><div class="contact-row"><b>Service Areas</b>Bihar & Rajasthan (subject to project availability)</div><a class="btn" href="https://wa.me/917909089495?text=Hello%20SK%20Solar%20Energy%2C%20please%20contact%20me%20about%20a%20solar%20project.">Message on WhatsApp</a></div></div></div></section>
-</main>
-<footer><div class="wrap foot"><span>© <span id="year"></span> SK Solar Energy. All rights reserved.</span><span>Powering Tomorrow with Clean Energy.</span></div></footer>
-<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
-</body></html>
+</section><section class="about" id="about">
+<div class="wrap about-grid"><div>
+  <div class="eyebrow">About SK Solar Energy</div>  <h2>Building a cleaner, solar-powered future.</h2>  <p>
+    SK Solar Energy is a solar energy business focused on helping
+    customers understand and adopt clean power solutions.
+    We aim to provide clear guidance, suitable system options
+    and dependable customer support.
+  </p>  <ul class="checklist">
+    <li>Solutions for homes, businesses and industries</li>
+    <li>On-grid, off-grid and hybrid system guidance</li>
+    <li>Project consultation and system design</li>
+    <li>Service enquiries across Bihar and Rajasthan</li>
+  </ul>
+</div><div class="note">
+  <b>Our approach</b>
+  <br>
+  We first understand your electricity use, site conditions and budget,
+  then help identify a suitable solar solution. Final system
+  specifications, pricing, approvals and timelines are confirmed
+  after a site assessment.
+</div></div>
+</section><section id="areas">
+<div class="wrap"><div class="section-head">
+  <div class="eyebrow">Where We Serve</div>
+  <h2>Bihar & Rajasthan</h2>
+  <p>
+    Contact us to confirm service availability for your town,
+    site and project requirements.
+  </p>
+</div><div class="areas">
+  <span class="pill">West Champaran</span>
+  <span class="pill">Bettiah</span>
+  <span class="pill">Bihar</span>
+  <span class="pill">Udaipur</span>
+  <span class="pill">Rajasthan</span>
+</div></div>
+</section><section class="contact" id="contact">
+<div class="wrap"><div class="section-head">
+  <div class="eyebrow" style="color:#9fe5a9">Get in Touch</div>
+  <h2>Let's discuss your solar project.</h2>
+  <p>Call or WhatsApp to enquire about a solar solution.</p>
+</div><div class="contact-grid"><div>
+  <h2>SK SOLAR ENERGY</h2>
+  <p>Powering Tomorrow with Clean Energy.</p>
+  <p>Residential • Commercial • Industrial • Solar EPC</p>
+</div><div class="contact-box">
+  <h3>Contact Details</h3>  <div class="contact-row">
+    <b>Contact Person</b>
+    Sanideval Kumar
+  </div>  <div class="contact-row">
+    <b>Mobile</b>
+    <a href="tel:+917909089495">+91 79090 89495</a>
+  </div>  <div class="contact-row">
+    <b>Address</b>
+    West Champaran, Bettiah – 845306, Bihar
+  </div>  <div class="contact-row">
+    <b>Service Areas</b>
+    Bihar & Rajasthan (subject to project availability)
+  </div><a class="btn"
+href="https://wa.me/917909089495?text=Hello%20SK%20Solar%20Energy%2C%20please%20contact%20me%20about%20a%20solar%20project.">
+Message on WhatsApp
+</a>
+
+</div></div>
+</div>
+</section></main><footer>
+<div class="wrap foot"><span>
+  © <span id="year"></span> SK Solar Energy. All rights reserved.
+</span><span>Powering Tomorrow with Clean Energy.</span>
+
+</div>
+</footer><script>
+/* CURRENT YEAR */
+
+document.getElementById('year').textContent =
+  new Date().getFullYear();
+
+/* MOBILE NAVIGATION */
+
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+function closeMenu() {
+  menuToggle.classList.remove('active');
+  mobileMenu.classList.remove('open');
+
+  menuToggle.setAttribute('aria-expanded', 'false');
+  menuToggle.setAttribute('aria-label', 'Open navigation menu');
+
+  mobileMenu.inert = true;
+}
+
+menuToggle.addEventListener('click', function() {
+
+  const isOpen =
+    menuToggle.getAttribute('aria-expanded') === 'true';
+
+  if (isOpen) {
+    closeMenu();
+  } else {
+
+    menuToggle.classList.add('active');
+    mobileMenu.classList.add('open');
+
+    menuToggle.setAttribute('aria-expanded', 'true');
+    menuToggle.setAttribute('aria-label', 'Close navigation menu');
+
+    mobileMenu.inert = false;
+  }
+});
+
+/* CLOSE MENU AFTER CLICKING A LINK */
+
+mobileMenu.querySelectorAll('a').forEach(function(link) {
+  link.addEventListener('click', closeMenu);
+});
+
+/* CLOSE MENU WHEN CLICKING OUTSIDE */
+
+document.addEventListener('click', function(event) {
+
+  if (
+    !menuToggle.contains(event.target) &&
+    !mobileMenu.contains(event.target)
+  ) {
+    closeMenu();
+  }
+
+});
+
+/* CLOSE MENU WITH ESCAPE KEY */
+
+document.addEventListener('keydown', function(event) {
+
+  if (event.key === 'Escape') {
+    closeMenu();
+    menuToggle.focus();
+  }
+
+});
+
+/* RESET MENU ON DESKTOP */
+
+window.addEventListener('resize', function() {
+
+  if (window.innerWidth > 800) {
+    closeMenu();
+  }
+
+});
+</script></body>
+</html>
